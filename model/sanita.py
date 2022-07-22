@@ -7,8 +7,7 @@ class Sanita:
         self.dottori = Dottore(matricola,nome, cognome, codiceFiscale)
 
     def aggiungiPaziente(self, nome, cognome, codiceFiscale, codicePaziente):
-        self.pazienti[codicePaziente] = [codiceFiscale, nome, cognome]
-
+        self.pazienti = Paziente(nome, cognome, codiceFiscale, codicePaziente
     # restituisce il paziente dato il codice
     def getPaziente(self, codicePaziente):
         print(self.pazienti[codicePaziente])
