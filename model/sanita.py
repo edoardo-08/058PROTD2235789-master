@@ -4,7 +4,7 @@ class Sanita:
         self.pazienti = {}
 
     def aggiungiDottore(self, nome, cognome, codiceFiscale, matricola):
-        self.dottori[matricola] = [codiceFiscale, nome, cognome]
+        self.dottori = Dottore(matricola,nome, cognome, codiceFiscale)
 
     def aggiungiPaziente(self, nome, cognome, codiceFiscale, codicePaziente):
         self.pazienti[codicePaziente] = [codiceFiscale, nome, cognome]
